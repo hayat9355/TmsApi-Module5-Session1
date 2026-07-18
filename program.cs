@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // ── Session 1: Authentication 
 builder.Services
+
     .AddAuthentication("Training")
     .AddScheme<AuthenticationSchemeOptions, TrainingAuthHandler>("Training", null);
 
